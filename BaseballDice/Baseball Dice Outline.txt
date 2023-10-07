@@ -1,0 +1,59 @@
+1. Establish teams
+
+	home team
+	visiting team - goes first
+	TODO - venue?
+
+2. handle roll / at bat
+
+	while outs == < 3:
+		calculate persons on bases
+		calculate runs
+		calculate outs
+		if outs == 3, next frame, (next team)
+
+	TODO - fights? 1:30, what's the consequence?
+	TODO - steals? 1:20, as a player option, advances ALL runners
+
+	TODO - "During this break in the action..."
+
+	TODO - Godzilla? random player eaten off field
+
+	TODO - Only on 'strike out,' 1:35, umpire misread the count, batter advances
+
+	TODO - Ten cent beer night - 1:75, Every roll is a home run until a sacrifice fly
+
+	TODO - streaker. 1:50, No impact on game, but that fucker gets tazed. 
+
+3. Handle game
+
+	-regular game is 18 frames / nine innings (two frames per inning)
+	-3 outs per frame
+
+	-Things get tricky in the ninth:
+
+	while playBall == True:
+
+		if frame == 17 (top of ninth) AND outs = 3:
+			if home Team Score > visiting team score
+			Game over. Home team wins, playBall = false
+
+			else:
+				if home Team score <= visiting team score
+				frame == 18
+
+		if frame == 18 (bottom of ninth) :
+			if home Team Score > visiting Team Score (at any time, handle walk-off):
+				Win for the home Team - playBall = false
+
+			(EXTRA INNINGS) elif outs == 3 AND home Team Score == visiting Team Score:
+				frame = 19
+
+
+
+				
+
+
+
+
+	
